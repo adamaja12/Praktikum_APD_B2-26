@@ -29,7 +29,7 @@ print(teks[3])
 Hujan = False
 panas = True
 
-print(hujan)
+print(Hujan)
 
 data = ("Adam", 10, True)
 
