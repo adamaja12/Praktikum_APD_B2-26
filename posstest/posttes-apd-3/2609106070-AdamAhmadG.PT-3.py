@@ -48,5 +48,3 @@ if username == nama and pasword == nim:
 
 else:  
     print("login gagal")
-    
-    
