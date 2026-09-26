@@ -39,12 +39,14 @@ if username == nama and pasword == nim:
 
     print("username: ", username)
     print("rank: ", rank)
-    print("sisa poin: ", sisa)
+    
 
     if rank == "Legend":
         print("Selamat! kamu telah mencapai rank tertinggi.")
-    elif total_poin >= 0:
-        print("sisa poin: ", sisa)
+    else:
+        print("sisa poin:", sisa)
 
-else:
+else:  
     print("login gagal")
+    
+    
