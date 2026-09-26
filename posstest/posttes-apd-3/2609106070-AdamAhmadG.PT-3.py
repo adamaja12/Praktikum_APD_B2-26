@@ -29,16 +29,12 @@ if username == nama and pasword == nim:
         rank = "Grand Master"
         sisa = 5000 - total_poin
 
-    elif total_poin == 5000:
-        rank = "Legend"
-        sisa = 5000 - total_poin
-
     else:
         rank = "Legend"
-        sisa = 0    
-
-    print("username: ", username)
-    print("rank: ", rank)
+          
+    if total_poin >= 0:
+        print("username: ", username)
+        print("rank: ", rank)
     
 
     if rank == "Legend":
