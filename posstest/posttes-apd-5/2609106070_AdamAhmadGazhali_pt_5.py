@@ -50,9 +50,9 @@ while True:
                     paket = input("Pilih paket: ")
 
                     if nama and hp.isdigit() and paket in ["1", "2", "3"]:
-                        idm = max([m[0] for m in members], default=0) + 1
+                        ida = max([m[0] for m in members], default=0) + 1
                         nama_paket = ["1 Bulan", "3 Bulan", "6 Bulan"][int(paket)-1]
-                        members.append([idm, nama, hp, nama_paket, "Aktif"])
+                        members.append([ida, nama, hp, nama_paket, "Aktif"])
                         print("Anggota berhasil ditambahkan!")
                     else:
                         print("Data tidak valid!")
@@ -71,11 +71,11 @@ while True:
                     for m in members:
                         print("ID:", m[0], "Nama:", m[1])
 
-                    idm = input("Masukkan ID anggota: ")
+                    ida = input("Masukkan ID anggota: ")
                     ketemu = False
 
                     for m in members:
-                        if str(m[0]) == idm:
+                        if str(m[0]) == ida:
                             ketemu = True
 
                             if p == "3":
@@ -116,11 +116,11 @@ while True:
                         print("Anggota tidak ditemukan!")
 
                 elif peran != "Admin" and p == "2":
-                    idm = input("Masukkan ID anggota: ")
+                    ida = input("Masukkan ID anggota: ")
                     ketemu = False
 
                     for m in members:
-                        if str(m[0]) == idm:
+                        if str(m[0]) == ida:
                             print("Nama:", m[1])
                             print("Status:", m[4])
                             ketemu = True
